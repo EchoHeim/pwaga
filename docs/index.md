@@ -1,16 +1,10 @@
 <div align="center">
-    <img alt="presencejs logo " src="/logo.png"><br/>
-    <a aria-label="NPM version" href="https://www.npmjs.com/package/@yomo/presencejs">
-        <img alt="NPM version" src="https://badgen.net/npm/v/@yomo/presencejs">
-    </a>
-    <a aria-label="License" href="https://github.com/yomorun/presencejs/blob/main/LICENSE">
-        <img alt="License" src="https://badgen.net/npm/license/@yomo/presencejs">
-    </a>
+    <img alt="pwaga logo " src="./logo.png"><br/>
 </div>
 
 ## 🧬 Introduction
 
-`Presencejs` is a JavaScript library that allows you to build real-time web applications quickly, the server is built atop of [YoMo](https://github.com/yomorun/yomo), which provide secure, low-latency, and high-performance geo-distributed services.
+`Pwaga` is a JavaScript library that allows you to build real-time web applications quickly, the server is built atop of [YoMo](https://github.com/yomorun/yomo), which provide secure, low-latency, and high-performance geo-distributed services.
 
 - **WebTransport** [Introduction: WebTransport is an API offering low-latency, bidirectional, client-server messaging.](https://web.dev/webtransport/)
   - Fallback to WebSocket if WebTransport connection cannot be established
@@ -23,13 +17,13 @@
 
 ...and a lot more.
 
-With `presencejs`, components will get data flow in real time. Thus, the UI will be always **fast** and **reactive**.
+With `Pwaga`, components will get data flow in real time. Thus, the UI will be always **fast** and **reactive**.
 
 ## 🌟 Showcase
 
 - React Cursor Chat Component:
   - Preview: https://cursor-chat-example.vercel.app
-  - Source code: https://github.com/yomorun/react-cursor-chat
+  - Source code: https://github.com/EchoHeim/react-cursor-chat
 - Next.js Commerce with realtime collaboration:
   - Preview: https://commerce-cursor-chat.vercel.app
   - Source code: https://github.com/osdodo/commerce
@@ -39,37 +33,37 @@ With `presencejs`, components will get data flow in real time. Thus, the UI will
 
 ## 🥷🏼 Quick Start
 
-### 1. Add `presencejs` to your web app
+### 1. Add `Pwaga` to your web app
 
 Using npm
 
 ```
-$ npm i --save @yomo/presencejs
+$ npm i --save @EchoHeim/Pwaga
 ```
 
 Using yarn
 
 ```
-$ yarn add @yomo/presencejs
+$ yarn add @EchoHeim/Pwaga
 ```
 
 Using pnpm
 
 ```
-$ pnpm i @yomo/presencejs
+$ pnpm i @EchoHeim/Pwaga
 ```
 
-For CDN, you can use [skypack](https://www.skypack.dev): [https://cdn.skypack.dev/@yomo/presencejs](https://cdn.skypack.dev/@yomo/presencejs)
+For CDN, you can use [skypack](https://www.skypack.dev): [https://cdn.skypack.dev/@EchoHeim/Pwaga](https://cdn.skypack.dev/@yomo/Pwaga)
 
 ```html
 <script type="module">
-    import Presence from 'https://cdn.skypack.dev/@yomo/presencejs';
+    import Presence from 'https://cdn.skypack.dev/@EchoHeim/Pwaga';
 </script>
 ```
 
 ### 2. Connect to presence server
 
-The client need to authenticate with YoMo to establish a realtime connection. The following code sample uses a demo YoMo's server(`https://prsc.yomo.dev`) and `token` to authenticate and print the message `Connected to YoMo!` when you’ve successfully connected.
+The client need to authenticate with Pwaga to establish a realtime connection. The following code sample uses a demo EchoHeim's server(`https://prsc.EchoHeim.dev`) and `token` to authenticate and print the message `Connected to Pwaga!` when you’ve successfully connected.
 
 #### How do I get a token?
 
@@ -80,7 +74,7 @@ For example, the following API route `pages/api/presence-auth.js` returns a json
 export default async function handler(req, res) {
     if (req.method === 'GET') {
         try {
-            const response = await fetch('https://prsc.yomo.dev/api/v1/auth', {
+            const response = await fetch('https://prsc.pwaga.dev/api/v1/auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -122,10 +116,10 @@ Response data:
 #### Create a `Presence` instance
 
 ```js
-import Presence from '@yomo/presencejs';
+import Presence from '@EchoHeim/Pwaga';
 
 // create an instance.
-const yomo = new Presence('https://prsc.yomo.dev', {
+const pwaga = new Presence('https://prsc.pwaga.dev', {
     auth: {
         // Certification Type
         type: 'token',
@@ -134,8 +128,8 @@ const yomo = new Presence('https://prsc.yomo.dev', {
     },
 });
 
-yomo.on('connected', () => {
-    console.log('Connected to server: ', yomo.host);
+pwaga.on('connected', () => {
+    console.log('Connected to server: ', pwaga.host);
 });
 ```
 
@@ -144,22 +138,22 @@ yomo.on('connected', () => {
 Call the `toRoom('001')` function to enter room `001`, without it, you are in the default room.The client receives a message with the name `online` through the `on` callback function, and can also subscribe to a message with the name `mousemove` by returning an observable object through `on$`.
 
 ```js
-yomo.on('connected', () => {
+pwaga.on('connected', () => {
     // Enter a room
-    yomo.toRoom('001');
+    pwaga.toRoom('001');
 
     // Function to handle response for given event from server
-    yomo.on('online', data => {
+    pwaga.on('online', data => {
         console.log('online:', data);
     });
 
     // Same as the `on` method, returns an observable response
-    yomo.on$('mousemove').subscribe(data => {
+    pwaga.on$('mousemove').subscribe(data => {
         console.log('mousemove:', data);
     });
 
     // If you want to display the latency, you can get the value of the latency like this
-    yomo.on('latency', data => {
+    pwaga.on('latency', data => {
         const { id, latency, meshId } = data;
         console.log('latency:', latency);
     });
@@ -177,9 +171,9 @@ import { map } from 'rxjs/operators';
 
 const ID = '34a1dbb5-c031-4680-926c-84a789d251e0';
 
-yomo.on('connected', () => {
+pwaga.on('connected', () => {
     // Function for sending data to the server
-    yomo.send('online', {
+    pwaga.send('online', {
         id: ID,
         x: 10,
         y: 10,
@@ -197,17 +191,17 @@ yomo.on('connected', () => {
     );
 
     // Sending data streams to the server
-    mousemove$.subscribe(yomo.ofRoom('001', 'mousemove'));
+    mousemove$.subscribe(pwaga.ofRoom('001', 'mousemove'));
 });
 ```
 
 ### 5. Close a connection
 
-A connection to YoMo can be closed once it is no longer needed.
+A connection to EchoHeim can be closed once it is no longer needed.
 
 ```js
-yomo.close();
-yomo.on('closed', () => {
+pwaga.close();
+pwaga.on('closed', () => {
     console.log('Closed the connection');
 });
 ```
@@ -221,11 +215,9 @@ yomo.on('closed', () => {
 | `send`              | Function for sending data to the server                         | `send<T>(event: string, data: T)`                   |
 | `toRoom`            | Enter a room                                                    | `toRoom(roomName: string): Presence`                |
 | `ofRoom`            | Function for sending data streams to the server                 | `ofRoom(roomName: string, event: string)`           |
-| `close`             | A connection to YoMo can be closed once it is no longer needed. | `close(): void`                                     |
+| `close`             | A connection to EchoHeim can be closed once it is no longer needed. | `close(): void`                                     |
 
 ## ⛷ Contributors
-
-[//]: contributor-faces
 
 <a href="https://github.com/osdodo"><img src="https://avatars.githubusercontent.com/u/24246314?v=4" title="Osdodo" width="60" height="60"></a>
 <a href="https://github.com/yoname"><img src="https://avatars.githubusercontent.com/u/25947177?v=4" title="Yona" width="60" height="60"></a>
@@ -233,8 +225,6 @@ yomo.on('closed', () => {
 <a href="https://github.com/xiaojian-hong"><img src="https://avatars.githubusercontent.com/u/48110142?v=4" title="XJ Hong" width="60" height="60"></a>
 <a href="https://github.com/venjiang"><img src="https://avatars.githubusercontent.com/u/1587671?v=4" title="Venjiang" width="60" height="60"></a>
 <a href="https://github.com/fanweixiao"><img src="https://avatars.githubusercontent.com/u/65603?v=4" title="C.C." width="60" height="60"></a>
-
-[//]: contributor-faces
 
 ## License
 
