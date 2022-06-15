@@ -7,7 +7,7 @@
 
 主程序
 
-    actapb/actapb
+    lacat/lacat
 
 > 功能包含
 > * 自动备份 (`部分指定文件`)

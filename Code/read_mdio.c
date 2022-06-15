@@ -10,7 +10,7 @@ mdio eth0 1          	读取phy寄存器1的数值
 mdio eth0 0 0x1120      将0x1120写入 phy寄存器0
 eth0 为mac层控制器的名称， 一般为eth0或mgmt0或ens33。
 ************************************************/
- 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

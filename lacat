@@ -4,8 +4,8 @@ cd $(dirname "$(realpath "${BASH_SOURCE[0]}")")     # 取得当前执行的 shel
 
 ### sourcing all additional scripts
 # pwd
-for script in "./actapb_ui/"*.sh; do . $script; done
-for script in "./actapb_fun/"*.sh; do . $script; done
+for script in "./lacat_ui/"*.sh; do . $script; done
+for script in "./lacat_fun/"*.sh; do . $script; done
 
 . ./all_define.sh
 
