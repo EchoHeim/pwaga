@@ -6,6 +6,5 @@ for((i=1;i<=20;i++));do
         /home/biqu/scripts/web_camera.sh
     fi
     echo "sync"
-	sleep 3
+sleep 3
 done
-
