@@ -69,5 +69,5 @@ sudo echo 4 > unexport
 
 附上我自己测试用的脚本：
 
-<https://github.com/EchoHeim/actapb/blob/master/RaspBerry/GPIO_test.sh>
+<https://github.com/EchoHeim/mfast/blob/master/RaspBerry/GPIO_test.sh>
 

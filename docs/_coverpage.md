@@ -19,8 +19,8 @@
 
 <br>
 
-[GitHub <i class="iconfont icon-github"></i>](https://github.com/EchoHeim/actapb/tree/master/docs)
+[GitHub <i class="iconfont icon-github"></i>](https://github.com/EchoHeim/mfast/tree/master/docs)
 [马上开始 <i class="iconfont icon-jiantouxia"></i>](./README.md)
 
 <!-- background image -->
-![back](https://cdn.jsdelivr.net/gh/EchoHeim/actapb/docs/images/coverpage.png)
+![back](https://cdn.jsdelivr.net/gh/EchoHeim/mfast/docs/images/coverpage.png)

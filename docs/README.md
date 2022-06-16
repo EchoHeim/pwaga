@@ -12,7 +12,7 @@
 
 &emsp;&emsp;扫描下方二维码 👇👇 关注“`程序小猴`”
 
-![logo](https://cdn.jsdelivr.net/gh/EchoHeim/actapb/docs/images/Qart_CodeMonkey.gif ':size=350x350')
+![logo](https://cdn.jsdelivr.net/gh/EchoHeim/mfast/docs/images/Qart_CodeMonkey.gif ':size=350x350')
 
 ## ☕ 赞赏作者
 

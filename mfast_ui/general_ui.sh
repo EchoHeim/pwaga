@@ -32,8 +32,8 @@ quit_footer(){
 print_header(){
     echo ""
     top_border
-    echo -e "$V_line     $(title_msg "~~~~~~~~~~~~~~~~~ [ LACAT ] ~~~~~~~~~~~~~~~~~~")     $V_line"
-    echo -e "$V_line     $(title_msg "     Auto Compile Tools And Personal Blog     ")     $V_line"
+    echo -e "$V_line     $(title_msg "~~~~~~~~~~~~~~~~~ [ MFAST ] ~~~~~~~~~~~~~~~~~~")     $V_line"
+    echo -e "$V_line     $(title_msg "   Multi-Functional Automatic Scripting Tool  ")     $V_line"
     echo -e "$V_line     $(title_msg "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")     $V_line"
     echo -e "$V_line                $yellow_flash***** Please choose *****$clear               $V_line"
     bottom_border

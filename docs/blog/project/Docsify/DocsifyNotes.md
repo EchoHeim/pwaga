@@ -23,7 +23,7 @@
 
 [官方入门文档](https://docsify.js.org/#/zh-cn/)
 
-> 此 [网站源码](https://github.com/EchoHeim/actapb/tree/master/docs) 全部开源。&emsp; 附上 [效果预览](https://echoheim.github.io/actapb/)
+> 此 [网站源码](https://github.com/EchoHeim/mfast/tree/master/docs) 全部开源。&emsp; 附上 [效果预览](https://echoheim.github.io/mfast/)
 
 ## 1.1 Docsify 特性
 
