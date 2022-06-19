@@ -1,4 +1,4 @@
-## <center> 使用Intent连接多个活动   <!-- {docsify-ignore} -->
+### <center> <font size=34 face="STKaiti"> 使用Intent连接多个活动 </font>    <!-- {docsify-ignore} -->
 
 `Intent` 是 `Android` 各组件之间进行交互的一种重要方式，一般被用于启动活动、启动服务以及发送广播等场景。
 

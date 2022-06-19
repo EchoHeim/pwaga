@@ -13,6 +13,8 @@ function about_ui(){
     blank_line
     echo -e "$V_line $blue       Blog  ➡ $purple https://pwaga.js.org/ $clear                 $V_line "
     blank_line
+    echo -e "$V_line $blue     GitHub  ➡ $purple https://github.com/EchoHeim $clear           $V_line "
+    blank_line
     echo -e "$V_line $blue     E-mail  ➡ $purple shilong.native@foxmail.com $clear            $V_line "
     blank_line
     echo -e "$V_line $blue  QQ/WeChat  ➡ $purple 416604093 $clear                             $V_line "

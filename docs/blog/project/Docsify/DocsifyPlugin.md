@@ -1,4 +1,4 @@
-## <center> Docsify 插件    <!-- {docsify-ignore} -->
+### <center> <font size=34 face="STKaiti"> Docsify 插件 </font>    <!-- {docsify-ignore} -->
 
 # 1. 实用功能
 

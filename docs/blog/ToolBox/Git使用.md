@@ -140,7 +140,7 @@ git remote -v
 ``` bash
 git remote add [name] [url]
 ```
-> 例如：`git remote add origin git@github.com:EchoHeim/mfast.git`   &emsp; #连接到远程仓库
+> 例如：`git remote add origin git@github.com:EchoHeim/Astapb.git`   &emsp; #连接到远程仓库
 
 * 删除远程仓库
 ``` bash
@@ -390,7 +390,7 @@ git update-index --no-assume-unchanged FILENAME     # 取消忽略
 其实对于我们直接使用仓库，而不是参与仓库工作的人来说，只要把最近的一次 `commit` 给 `clone` 下来就好了。这就好比一个产品有很多个版本，我们只要 `clone` 最近的一个版本来使用就行了。实现这个功能就需要用到 `git clone --depth=1` 命令
 
 ``` bash
-git clone --depth 1  git@github.com:EchoHeim/mfast.git
+git clone --depth 1  git@github.com:EchoHeim/Astapb.git
 ```
 
 ## 5.4 fork仓库更新
@@ -488,7 +488,7 @@ git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
 
 例如：
 ``` bash
-git remote set-url origin https://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@github.com/EchoHeim/mfast.git/
+git remote set-url origin https://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@github.com/EchoHeim/Astapb.git/
 ```
 
 ## 6.2 ssh 连接超时

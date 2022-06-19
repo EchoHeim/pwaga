@@ -19,8 +19,8 @@
 
 <br>
 
-[GitHub <i class="iconfont icon-github"></i>](https://github.com/EchoHeim/mfast/tree/master/docs)
-[马上开始 <i class="iconfont icon-jiantouxia"></i>](./README.md)
+[GitHub <i class="iconfont icon-github"></i>](https://github.com/EchoHeim/Astapb/tree/master/docs)
+[开始冲浪 <i class="iconfont icon-jiantouxia"></i>](blog_start.md)
 
 <!-- background image -->
-![back](https://cdn.jsdelivr.net/gh/EchoHeim/mfast/docs/images/coverpage.png)
+![back](https://cdn.jsdelivr.net/gh/EchoHeim/Astapb/docs/images/coverpage.png)

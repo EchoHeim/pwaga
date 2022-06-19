@@ -107,7 +107,7 @@ if [[ $Type_Chose -eq 9 ]]; then            # This script;
         cd $SHELL_ROOT_PATH/..
         rm $SHELL_ROOT_PATH -fr
 
-        git clone --depth 1 https://github.com/EchoHeim/mfast.git
+        git clone --depth 1 https://github.com/EchoHeim/Astapb.git
 
         if [ $? == 0 ]; then        # 判断上一条命令是否成功执行;
             echo -e "\n$blue/==================================================\\\\$clear"

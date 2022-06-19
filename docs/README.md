@@ -12,20 +12,13 @@
 
 &emsp;&emsp;扫描下方二维码 👇👇 关注“`程序小猴`”
 
-![logo](https://cdn.jsdelivr.net/gh/EchoHeim/mfast/docs/images/Qart_CodeMonkey.gif ':size=350x350')
+![logo](https://cdn.jsdelivr.net/gh/EchoHeim/Astapb/docs/images/Qart_CodeMonkey.gif ":size=350x350")
 
 ## ☕ 赞赏作者
 
 > 觉得内容还不错的话，请作者喝一杯咖啡吧~
 
-<!-- 赞赏链接 -->
-<iframe src="./sponsor/simple/index.html" 
-    style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; min-width:520px;"  
-    frameborder="0" 
-    scrolling="no">
-</iframe>
 
-<!-- 外链分享 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
-<div class="social-share"></div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+|                                      AliPay                                      |                                     WeChatPay                                     |
+| :---------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| ![](https://cdn.jsdelivr.net/gh/EchoHeim/Astapb/docs/sponsor/images/AliPayQR.png) | ![](https://cdn.jsdelivr.net/gh/EchoHeim/Astapb/docs/sponsor/images/WeChatQR.png) |
