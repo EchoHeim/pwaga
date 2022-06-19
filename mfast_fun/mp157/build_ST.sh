@@ -16,9 +16,9 @@ if [ $# == 0 ]; then
     do
         echo -e "\n$blue/==================================================\\\\$clear"
         if [ $linuxVersion == "5.4" ]; then
-            echo -e "$V_line $skyblue         [ Build openSTLinux5.4 Menu ]          $clear $V_line"
+            echo -e "$V_line $cyan         [ Build openSTLinux5.4 Menu ]          $clear $V_line"
         elif [ $linuxVersion == "5.10" ]; then
-            echo -e "$V_line $skyblue         [ Build openSTLinux5.10 Menu ]         $clear $V_line"
+            echo -e "$V_line $cyan         [ Build openSTLinux5.10 Menu ]         $clear $V_line"
         fi
         echo -e "$blue|--------------------------------------------------|$clear"
         echo -e "$V_line            $yellow_flash***** Please choose *****$clear             $V_line"

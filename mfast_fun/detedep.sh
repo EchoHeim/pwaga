@@ -17,11 +17,11 @@ function WhetherInstall(){
         echo -e "\nChecking for the following dependencies:\n"
         for pkg in "${inst_pkg[@]}"
         do
-            echo -e "${cyan}● $pkg ${default}"
+            echo -e "${cyan}● $pkg ${clear}"
         done
         echo -e "\n"
 
-        read -p "${cyan}###### Installing the above packages? (Y/n):${default} " yn
+        read -p "${cyan}###### Installing the above packages? (Y/n):${clear} " yn
         case "$yn" in
         Y|y|Yes|yes|"")
             echo

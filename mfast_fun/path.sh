@@ -60,39 +60,6 @@ PATH_PI_SOURCE_pi4=$PATH_PI_WORKSPACE/linux/Pi4
 
 
 
-# ======== color ========
-clear='\033[0m'
-black='\033[30m'
-red='\033[31m'
-green='\033[32m'
-yellow='\033[33m'
-blue='\033[34m'
-purple='\033[35m'
-skyblue='\033[36m'
-white='\033[37m'
-
-### set color variables
-green=$(echo -en "\e[92m")
-yellow=$(echo -en "\e[93m")
-red=$(echo -en "\e[91m")
-cyan=$(echo -en "\e[96m")
-default=$(echo -en "\e[39m")
-
-
-black_flash='\033[30;5m'
-red_flash='\033[31;5m'
-green_flash='\033[32;5m'
-yellow_flash='\033[33;5m'
-blue_flash='\033[34;5m'
-purple_flash='\033[35;5m'
-skyblue_flash='\033[36;5m'
-white_flash='\033[37;5m'
-
-# Var
-S_line="$blue/$clear"       # /
-V_line="$blue|$clear"       # |
-H_line="$blue-$clear"       # -
-BS_line="$blue\\\\$clear"   # \
 
 
 # #!/bin/bash
