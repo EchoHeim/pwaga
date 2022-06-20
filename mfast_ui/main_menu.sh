@@ -11,9 +11,9 @@ function main_ui(){
     echo -e "$V_line $yellow 3)$clear [MP157]                   $V_line                        $V_line "
     main_blank_line
     echo -e "$V_line $yellow 4)$clear [RaspBerryPi]             $V_line                        $V_line "
-    main_blank_line
+    echo -e "$V_line                               $V_line            Ver: 1.0.1  $V_line "
 
-    quit_footer
+    quit_backup_footer
 }
 
 function main_menu(){
@@ -35,9 +35,8 @@ function main_menu(){
             U|u) do_action "main_ui";;
 
             I|i) clear && about_menu && break;;
-            Q|q)
-                echo -e "${green}###### Good Job! ######${clear}"; echo
-                exit 0;;
+            B|b) clear && backup_menu && break;;
+            Q|q) quit_msg;;
             *)  deny_action "main_ui";;
         esac
 

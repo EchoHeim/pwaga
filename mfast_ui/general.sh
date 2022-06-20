@@ -45,15 +45,22 @@ function hr(){
     echo -e "${blue}|--------------------------------------------------------|${clear}"
 }
 
+function quit_msg(){
+    top_border
+    echo -e "$V_line ${green} ###### Good Job! ###### ${clear}                              $V_line"
+    bottom_border
+    exit 0
+}
+
 function quit_back_footer(){
     hr
-    echo -e "$V_line                                  ${purple} Q/B: Quit or Back!${clear}   $V_line"
+    echo -e "$V_line                                   ${purple} Q/B: Quit or Back!${clear}  $V_line"
     bottom_border
 }
 
-function quit_footer(){
+function quit_backup_footer(){
     hr
-    echo -e "$V_line                                         ${purple} Q: Quit!${clear}      $V_line"
+    echo -e "$V_line                                 ${purple} Q/B: Quit or Backup!${clear}  $V_line"
     bottom_border
 }
 

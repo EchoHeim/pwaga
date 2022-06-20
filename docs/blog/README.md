@@ -7,7 +7,7 @@
 如果你觉得这种文档网站的构建方式还不错，想像我这样去优化项目仓库，不妨参考本人写的两篇文章
 
 * [Markdown 语法](blog/Markdown语法.md)
-* [Docsify 使用手册](blog/project/Docsify/docsifyNotes.md)
+* [Docsify 使用手册](blog/project/Docsify/DocsifyNotes.md)
 
 # 🐼 关于作者
 
