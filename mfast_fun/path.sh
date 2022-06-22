@@ -13,6 +13,10 @@ WindowsIP=192.168.0.203
 
 # ======== PATH ========
 
+# ORANGEPI_PATH=/home/lodge/Allwinner/orangepi-build
+ORANGEPI_PATH=/home/lodge/Allwinner/kernel4.9/orangepi-build
+
+
 SHELL_ROOT_PATH="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"      # 取得当前执行的 shell 文件所在的绝对路径;
 
 WINDOWS_SHARE_DIR=/run/user/1000/gvfs/smb-share:server=$WindowsIP,share=code         # windows 共享文件夹;

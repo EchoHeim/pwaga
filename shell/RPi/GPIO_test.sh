@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# 作用
+# 自动化测试树莓派 40pin 外接输出引脚，定时让所有 IO 自动输出高低电平;
 # 测试 io 口输出是否正常;
+
+# ![树莓派引脚图](https://user-images.githubusercontent.com/26021085/155838003-5542a8c4-f9a3-4975-9045-9dbd5e0a2f84.jpg)
 
 cd /sys/class/gpio
 

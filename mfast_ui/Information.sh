@@ -36,7 +36,7 @@ function about_menu(){
 
             B|b) clear; main_menu; break;;
             Q|q) quit_msg;;
-            *)  deny_action "about_ui";;
+            *)  Selection_invalid "about_ui";;
 
         esac
     done
