@@ -1,8 +1,4 @@
-<<<<<<< HEAD:docs/blog/Linux/Linux小技巧/Linux压缩软件的使用.md
 ### <center> <font size=34 face="STKaiti"> Linux 压缩软件的使用 </font>    <!-- {docsify-ignore} -->
-=======
-### <center> <font size=34 face="STKaiti"> Linux 压缩软件的使用  </font>    <!-- {docsify-ignore} -->
->>>>>>> c726b1051a06e5b57cca7b9107b89723cc884720:docs/blog/Linux/Linux压缩软件的使用.md
 
 # 1. 文件后缀名含义
 

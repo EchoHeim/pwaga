@@ -1,8 +1,4 @@
-<<<<<<< HEAD:docs/blog/Linux/Linux小技巧/Linux自动挂载U盘.md
 ### <center> <font size=34 face="STKaiti"> Linux 自动挂载U盘 </font>    <!-- {docsify-ignore} -->
-=======
-### <center> <font size=34 face="STKaiti"> Linux 自动挂载U盘  </font>    <!-- {docsify-ignore} -->
->>>>>>> c726b1051a06e5b57cca7b9107b89723cc884720:docs/blog/Linux/Linux自动挂载U盘.md
 
 > Linux 自动挂载U盘 实现热插拔
 
