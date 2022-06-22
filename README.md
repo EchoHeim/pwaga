@@ -16,7 +16,7 @@
 
 - 主程序
 
-  mfast/mfast
+    Astapb/mfast.sh
 
 # 2. 功能包含
 

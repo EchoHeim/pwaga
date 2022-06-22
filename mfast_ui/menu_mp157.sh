@@ -1,9 +1,10 @@
-function h616_ui(){
+function mp157_ui(){
     ui_print_versions
     top_border
 
-        echo -e "$V_line $yellow  5:$clear all build         $V_line $yellow  6:$clear update files       $V_line"
-        
+    echo -e "$V_line $yellow  1:$clear STlinux 5.4       $V_line $yellow  2:$clear STlinux 5.10       $V_line"
+    echo -e "$V_line $yellow  9:$clear Restore Factory Image                       $V_line"
+
     echo -e "|     ${green}~~~~~~~~~~~~~~ [ Update Menu ] ~~~~~~~~~~~~~~${clear}     | "
     hr
     echo -e "|  0) $BB4U_STATUS| "
@@ -31,20 +32,22 @@ function h616_ui(){
     back_footer
 }
 
-function h616_menu(){
- 
-    do_action "" "h616_ui"
+function mp157_menu(){
+
+    do_action "" "mp157_ui"
     while true; do
-        read -p "${cyan}Perform action:${clear} " action; echo
+        read -p "${cyan}Perform action:${red} " action; echo
         case "$action" in
 
+        10)
+            do_action "update_system" "mp157_ui";;
         a)
-            do_action "update_all" "h616_ui";;
+            do_action "update_all" "mp157_ui";;
         B|b)
             clear; main_menu; break;;
         *)
-            deny_action "h616_ui";;
+            Selection_invalid "mp157_ui";;
         esac
     done
-    h616_menu
+    mp157_menu
 }

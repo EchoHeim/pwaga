@@ -1,5 +1,5 @@
-#!/bin/bash
-
+function build_rpi(){
+   
 Pi_Ver=0
 
 echo -e "\n$blue/==================================================\\\\$clear"
@@ -80,3 +80,6 @@ echo -e "\n$blue/==================================================\\\\$clear"
 echo -e "$V_line $yellow                  [  Notice  ]                  $clear $V_line"
 echo -e "$V_line $yellow       **** compile kernel complete! ****       $clear $V_line"
 echo -e "$blue\\==================================================/$clear"
+
+}
+

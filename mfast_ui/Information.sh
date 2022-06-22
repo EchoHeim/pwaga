@@ -34,13 +34,9 @@ function about_menu(){
         read -p "${cyan}Perform action:${red} " action; echo
         case "$action" in
 
-            B|b)
-                clear; main_menu; break;;
-            Q|q)
-                echo -e "${green}###### Good Job! ######${clear}"; echo
-                exit 0;;
-            *)
-                deny_action "about_ui";;
+            B|b) clear; main_menu; break;;
+            Q|q) quit_msg;;
+            *)  Selection_invalid "about_ui";;
 
         esac
     done
