@@ -5,7 +5,7 @@ CycleSelect=1
 
 #---------------------------------------------------------------
 
-function ui () {
+function backups () {
     
 if [ $# == 0 ]; then
 

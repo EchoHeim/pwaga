@@ -36,3 +36,23 @@ function WhetherInstall(){
         esac
     fi
 }
+
+# for type in ANSI ANSI256 ASCII ASCIIi UTF8 ANSIUTF8;do echo $type ;qrencode -t $type "a";done
+
+function armbian_status() {
+    echo "================================"
+}
+
+function stm32mp157_status() {
+    echo "================================"
+}
+
+function raspberrypi_status() {
+    echo "================================"
+}
+
+function orangepi_status() {
+    echo "================================"
+}
+
+

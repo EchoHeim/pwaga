@@ -1,4 +1,4 @@
-## <center> string 类   <!-- {docsify-ignore} -->
+### <center> <font size=34 face="STKaiti"> string 类 </font>    <!-- {docsify-ignore} -->
 
 # 1. 引言
 

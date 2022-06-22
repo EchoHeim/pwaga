@@ -95,10 +95,6 @@ function get_date(){
     current_date=$(date +"%y%m%d-%H%M")
 }
 
-function print_unkown_cmd(){
-    ERROR_MSG="Invalid command!"
-}
-
 function print_msg(){
     if [[ "$ERROR_MSG" != "" ]]; then
         top_border
@@ -135,28 +131,21 @@ function clear_msg(){
 
 function do_action(){
     clear && print_header
-    ### $1 is the action the user wants to fire
+    if [ $# -eq 2 ]; then
+        ### $1 is the action the user wants to fire
+        $1
+        print_msg
+        ### $2 is the menu the user usually gets directed back to after an action is completed
+        $2
+    elif [ $# -eq 1 ]; then
+        print_msg
+        $1
+    fi
+}
+
+function Selection_invalid(){
+    clear && print_header
+    error_msg "Invalid command!"
+    print_msg
     $1
-    print_msg && clear_msg
-    ### $2 is the menu the user usually gets directed back to after an action is completed
-    $2
-}
-
-function deny_action(){
-    clear && print_header
-    print_unkown_cmd
-    print_msg && clear_msg
-    $1
-}
-
-function deny_mjpg_action(){
-    clear && print_header
-    print_no_mjpg
-    print_msg && clear_msg
-}
-
-function do_action_OK(){
-    clear && print_header
-    print_enable_mjpg_ok
-    print_msg && clear_msg
 }

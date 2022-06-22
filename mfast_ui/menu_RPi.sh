@@ -2,7 +2,7 @@ function rpi_ui(){
     ui_print_versions
     top_border
 
-            echo -e "$V_line $yellow  3:$clear compile image     $V_line $yellow  4:$clear install image      $V_line"
+    echo -e "$V_line $yellow  3:$clear compile image     $V_line $yellow  4:$clear install image      $V_line"
         
     echo -e "|     ${green}~~~~~~~~~~~~~~ [ Update Menu ] ~~~~~~~~~~~~~~${clear}     | "
     hr
@@ -34,7 +34,7 @@ function rpi_ui(){
 function rpi_menu(){
     do_action "" "rpi_ui"
     while true; do
-        read -p "${cyan}Perform action:${clear} " action; echo
+        read -p "${cyan}Perform action:${red} " action; echo
         case "$action" in
 
         10)
@@ -43,8 +43,7 @@ function rpi_menu(){
             do_action "update_all" "rpi_ui";;
         B|b)
             clear; main_menu; break;;
-        *)
-            deny_action "rpi_ui";;
+        *)  Selection_invalid "rpi_ui";;
         esac
     done
     rpi_menu
